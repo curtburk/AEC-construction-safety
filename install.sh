@@ -25,6 +25,11 @@ source venv/bin/activate
 # Upgrade pip
 pip install --upgrade pip
 
+# Install PyTorch with CUDA support
+echo ""
+echo "Installing PyTorch with CUDA support..."
+pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu130
+
 # Install backend dependencies
 echo ""
 echo "Installing dependencies..."
